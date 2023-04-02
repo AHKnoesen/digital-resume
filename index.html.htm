@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Website</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <!-- CSS -->
+  <style>
+    /* Header styling */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    /* Profile picture styling */
+    .profile-pic {
+      width: 200px;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+    }
+    /* Education section styling */
+    .education {
+      margin: 40px 0;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    /* Skills section styling */
+    .skills {
+      margin: 40px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      text-align: left;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    /* Footer styling */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Form styling */
+    form {
+      margin: 40px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+    /* Box element styling */
+    .box {
+      margin: 40px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img class="profile-pic" src="https://raw.githubusercontent.com/AHKnoesen/digital-resume/main/C1-309.jpg" alt="Profile picture">
+    <h1>Adam Knoesen</h1>
+    <h2>Front End Web Developer</h2>
+    <p>A young aspiring coder with drive and passion.</p>
+    <a href="#contact">Contact</a> | <a href="https://github.com/ahknoesen">GitHub</a>
+  </header>
+
+  <!-- Education section -->
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Bachelor of Science, Computer Science, XYZ University</li>
+      <li>Master of Business Administration, ABC University</li>
+    </ul>
+  </section>
+
+  <!-- Skills section -->
+<section class="skills">
+  <h2>Skills</h2>
+  <table>
+    <tr>
+      <th>Programming Languages</th>
+      <td>JavaScript, HTML, CSS, Python</td>
+    </tr>
+    <tr>
+      <th>Tools</th>
+      <td>Git, VS Code, Sublime Text, npm</td>
+    </tr>
+    <tr>
+      <th>Software</th>
+      <td>Adobe Photoshop, Microsoft Office</td>
+    </tr>
+    <tr>
+      <th>Other Skills</th>
+      <td>Project Management, Leadership, Communication</td>
+    </tr>
+  </table>
+</section>
+
+<!-- Contact form section -->
+<section class="contact">
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/adamknoesen" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- CSS box element -->
+<div class="box">
+  <h2>Box Element</h2>
+  <p>This is an example of a CSS box element.</p>
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+  <p>Contact me at <a href="mailto:ahknoesenwork@gmail.com">ahknoesenwork@gmail.com</a>.</p>
+  <a href="https://github.com/ahknoesen">GitHub</a> | <a href="https://www.linkedin.com/in/adamknoesen/">LinkedIn</a>
+</footer>
